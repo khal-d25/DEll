@@ -6,6 +6,8 @@ pages.forEach((e)=>{
 })
 
 
+
+
 const n = document.querySelector('#n')
 const p = document.querySelector('#p')
 const catcat =document.querySelector('#catcat')
@@ -29,7 +31,6 @@ p.addEventListener('click',()=>{
     }
     
 })
-
 
 
 
