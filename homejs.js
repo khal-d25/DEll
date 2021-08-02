@@ -5,14 +5,16 @@ const scroll = document.querySelector('#scroll')
 const picture = document.querySelectorAll('.picture')
 
 
-var lmenu_style = window.getComputedStyle(lmenu)
-var height =  lmenu_style.getPropertyValue('height')
+const lmenu_style = window.getComputedStyle(lmenu)
+const height =  lmenu_style.getPropertyValue('height')
+console.log(height)
 var scroll_style = window.getComputedStyle(scroll)
 var width =  scroll_style.getPropertyValue('width')
-console.log(width)
+// console.log(width)
 
 
 lmenu.style.width = height;
+lmenu.style.height = height;
 headerimg.style.height=height;
 callbtn.style.width=height;
 callbtn.style.height=height;
