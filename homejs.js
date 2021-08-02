@@ -19,32 +19,6 @@ callbtn.style.height=height;
 
 
 picture.forEach((e)=>{
-    e.style.width = width;
+    e.style.width = width/2;
 })
 
-const n = document.querySelector('#n')
-const p = document.querySelector('#p')
-const catcat =document.querySelector('#catcat')
-
-var x =0 ;
-
-n.addEventListener('click',()=>{
-    if(x<11){
-        console.log("left")
-        x = x+width;
-        catcat.style.transform = `translate(-${x}px,0)`;
-        
-    }
-    
-})
-
-p.addEventListener('click',()=>{
-    if(x>0){
-        console.log("right")
-
-        x = x-width;
-        catcat.style.transform = `translate(-${x}px,0)`;
-
-    }
-    
-})
