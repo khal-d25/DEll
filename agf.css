@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+
+
+:root{
+    --color-nav: rgba(255, 255, 255);
+
+    --font-fixed:'Chonburi', cursive;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    padding: 2%;
+    /* width: 100%; */
+}
+
+#container{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#nav{
+    height: 10%;
+    width: 100%;
+    background-color: var(--color-nav);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+#nav img{
+    display: inline-block;
+    max-height: 90%;
+}
+
+#scroll{
+  
+    height: 90%;
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+.pages{
+    display: block;
+    height: 100%;
+    width: 95%;
+    border: 1px solid white;
+    background: gray;
+    margin: 1% auto 1% auto;
+}
+
+#home {
+    background: transparent;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.fixed{
+    position: absolute;
+    height: 90%;
+    /* color: white; */
+    font-family: var(--font-fixed);
+    font-size: 60vh;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    
+}
+
+#fixedhome1{
+    bottom: -10%;
+    left: 15%;
+
+}
+#fixedhome2{
+    bottom: -30%;
+    left: 30%;
+}
