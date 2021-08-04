@@ -3,6 +3,10 @@
 
 :root{
     --color-nav: rgba(255, 255, 255);
+    --color-dark:#184D47;
+    --color-light:#96BB7C;
+    --color-white:#D6EFC7;
+    --color-yellow:#EEBB4D;
 
     --font-fixed:'Chonburi', cursive;
 
@@ -13,7 +17,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: var(--color-dark);
     height: 100vh;
     margin: 0;
     padding: 2%;
@@ -56,16 +60,10 @@ body{
 
 }
 
-.pages{
-    display: block;
-    height: 100%;
-    width: 95%;
-    border: 1px solid white;
-    background: gray;
-    margin: 1% auto 1% auto;
-}
+
 
 #home {
+    height: 80vh;
     background: transparent;
     position: relative;
     overflow-x: hidden;
@@ -81,6 +79,7 @@ body{
     font-size: 60vh;
     color: transparent;
     -webkit-text-stroke: 1px white;
+    z-index: -1;
     
 }
 
@@ -92,4 +91,210 @@ body{
 #fixedhome2{
     bottom: -30%;
     left: 30%;
+}
+
+.pages{
+    height: 80vh;
+}
+
+#catalog{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* overflow-x: hidden; */
+    position: relative;
+
+}
+
+#cat *{
+    margin: 1%;
+    width: 100%;
+}
+
+#cat_container{
+    display: block;
+    height: 80%;
+    width: 100%;
+    position: relative;
+    /* background:gray; */
+    /* border: 2px solid white; */
+    display: flex;
+    overflow-x: scroll;
+
+    
+    /* justify-content: space-evenly; */
+   
+}
+
+.heading{
+    height: 20%;
+}
+
+
+
+
+#catcat{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+    transition: transform 0.5s ease-in;
+    
+}
+
+.picture{
+   width: 100vw;
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.picture img{
+    display:inline;
+    max-width: 50vw;
+    max-height: 50%;
+    margin: 0;
+    box-shadow: 4vh 4vh 4vh black;
+    border-radius: 1rem;
+    border: 1px solid white;
+
+}
+
+.cs{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    " p1 p2"
+    "card card"
+    "form form";
+    gap: 2%;
+}
+
+#p1{
+    grid-area: p1;
+    border: 1px solid white;
+}
+#p2{
+    grid-area: p2;
+    border: 1px solid white;
+
+}
+#card{
+    grid-area: card;
+}
+#form{
+    border: 1px solid white;
+
+    grid-area: form;
+}
+
+#card{
+    
+    display: block;
+    height: 50%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#card img{
+    display: block;
+    width: 60%;
+    /* height: 50%; */
+}
+
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+   height: 80%;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#qform{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.newattr{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1%;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.newattr span,  #mail-select{
+    height: 100%;
+    display: inline-block;
+    width: 20%;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+}
+
+#mail-select{
+   width: 40%;
+}
+
+.newattr input{
+    height: 100%;
+    width: 70%;
+    transition: all 0.5s ease-in ;
+    background-color: transparent;
+    border: 0;
+}
+
+#fmail{
+    flex-grow: 1;
+}
+
+.newattr input:hover{
+    background-color: rgba(128, 128, 128,0.5);
+    /* color: white; */
+}
+
+#send{
+    padding: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0,0.5);
+}
+
+
+
+@media screen and (max-width:480px) {
+    
+    #name{
+        display: none;
+    }
 }
