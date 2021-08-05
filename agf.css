@@ -241,7 +241,7 @@ body{
 .headingfixed{
     position: absolute;
     font-size: 1500%;
-    color: white;
+    color: black;
     z-index: -1;
     right: -20%;
     top: 10%;opacity: 0.5;
