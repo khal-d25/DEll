@@ -69,6 +69,7 @@ body{
     height: 90%;
     width: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
 
 }
 
@@ -113,6 +114,16 @@ body{
     position: relative;
 }
 
+#about{
+    position: relative;
+    height: 50vh;
+}
+
+#about .headingfixed{
+    top: 60%;
+    right: -10%;
+}
+
 #dcompany{
     font-family: var(--font-1);
     color: white;
@@ -123,7 +134,10 @@ body{
 
 #company{
     font-family: var(--font-content);
-    color: white;padding: 5%;
+    color: white;
+    -webkit-text-stroke: 0.1px black;
+
+    padding: 5%;
     line-height: 1.5;
     font-size: 18px;
     text-align: center;
@@ -312,9 +326,13 @@ body{
 .p{
     padding: 2%;
     color: white;
-    font-weight: bold;
+   
     font-family: var(--font-content);
 }
+
+
+
+
 
 
 #card{
