@@ -200,6 +200,7 @@ body{
     flex-direction: column;
     /* flex-wrap: wrap; */
     justify-content: space-between;
+    align-items: center;
     /* overflow-x: hidden; */
     position: relative;
     overflow:hidden;
@@ -442,6 +443,39 @@ body{
     border-radius: 10px;
     background-color: rgba(0, 128, 0,0.5);
 }
+
+#logistics{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#logp{
+    width: 80%;
+    align-self: flex-end;
+    color: white;
+    font-family: var(--font-content);
+    text-align: right;
+    font-size: 18px;
+    margin: 2%;
+
+}
+
+#logistics .headingfixed{
+    left: -30%;
+}
+
+#map{
+    width: 80%;
+    height: 40vh;
+    align-self: center;
+}
+
+
 
 
 
