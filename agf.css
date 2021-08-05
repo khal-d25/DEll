@@ -81,6 +81,26 @@ body{
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
+    position: relative;
+
+}
+
+#scrolldown {
+    position: absolute;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+    align-items: center;
+    color: white;
+}
+
+#scrolldown *{
+    margin: 1%;
+}
+
+#ddown{
+    transition: all 1s ease;
 
 }
 
@@ -119,10 +139,10 @@ body{
     height: 50vh;
 }
 
-#about .headingfixed{
+/* #about .headingfixed{
     top: 60%;
     right: -10%;
-}
+} */
 
 #dcompany{
     font-family: var(--font-1);
