@@ -6,6 +6,7 @@
 
 :root{
     --color-nav: rgba(255, 255, 255);
+    --color-nav1: rgba(255, 255, 255,0.5);
     --color-dark:#184D47;
     --color-light:#96BB7C;
     --color-white:#D6EFC7;
@@ -109,6 +110,7 @@ body{
 
 .pages{
     height: 90vh;
+    position: relative;
 }
 
 #dcompany{
@@ -212,7 +214,7 @@ body{
 }
 
 .heading{
-    position: relative;
+    /* position: relative;s */
     font-family: var(--font-heading);
     color: white;
     height: 30%;
@@ -277,31 +279,61 @@ body{
 }
 
 #contact{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: 
-    " p1 p2"
-    "card card"
-    "form form";
-    gap: 2%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    padding: 2%;
+    overflow-x: hidden;
+    align-items: center;
+    
+   
+   
 }
 
-#p1{
-    grid-area: p1;
-    border: 1px solid white;
+#contact > div{
+    margin: 2%;
 }
-#p2{
-    grid-area: p2;
-    border: 1px solid white;
 
+#cntup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+#cntupup{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2%;
+    /* background-color: var(--color-nav1); */
+}
+
+.p{
+    padding: 2%;
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-content);
+}
+
+
 #card{
     grid-area: card;
+
+}
+
+#cardimg{
+    box-shadow: 10px 20px 10px black;
+
 }
 #form{
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
     grid-area: form;
+}
+
+#cthead{
+    grid-area: head;
 }
 
 #card{
@@ -325,7 +357,8 @@ body{
 #form{
     display: flex;
     flex-direction: column;
-   height: 80%;
+    width: 100%;
+   height: 40vh;
    justify-content: center;
    align-items: center;
 
@@ -333,7 +366,7 @@ body{
 
 #qform{
     height: 100%;
-    width: 70%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     padding: 2%;
