@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
 
 
 :root{
@@ -13,7 +14,7 @@
     --color-yellow:#EEBB4D;
 
     --font-fixed:'Chonburi', cursive;
-    --font-ag:'Oi', cursive;
+    --font-ag:'Sawarabi Mincho', sans-serif;
 
     --font-content:'Karla', sans-serif;
     --font-heading:'Gowun Dodum', sans-serif;
@@ -175,7 +176,7 @@ body{
 }
 
 #homename{
-    /* font-family: var(--font-ag); */
+    font-family: var(--font-ag);
     color: white;
     font-size: 48px;
     
@@ -208,6 +209,13 @@ body{
     background-size: cover;
     margin: 5%;
     box-shadow: 10px 10px 10px black;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+	box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 
 
 }
@@ -253,7 +261,7 @@ body{
     font-family: var(--font-heading);
     color: white;
     height: 30%;
-    font-size: 36px;
+    font-size: 24px;
     /* -webkit-text-stroke: 0.1px black; */
     text-shadow: 10px 20px 10px black;
 }
@@ -304,6 +312,11 @@ body{
 
 }
 
+.catname{
+    color: white;
+
+}
+
 .cs{
     width: 20%;
     height: 100%;
@@ -316,6 +329,7 @@ body{
 #contact{
     display: flex;
     flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     position: relative;
     padding: 2%;
@@ -495,6 +509,43 @@ body{
     align-self: center;
 }
 
+#social{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    color: white;
+}
+
+#sm div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 36px;
+}
+
+.s{
+    margin: 5%;
+}
+#social span{
+    color: white;
+}
+
+.at{
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
 
 
 
