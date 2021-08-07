@@ -42,3 +42,55 @@ menu.addEventListener('click',()=>{
 
     }
 })
+
+const hbtn =document.querySelector('#hbtn')
+const abtn =document.querySelector('#abtn')
+const lbtn =document.querySelector('#lbtn')
+const cbtn =document.querySelector('#cbtn')
+const cobtn =document.querySelector('#cobtn')
+const sbtn =document.querySelector('#sbtn')
+
+const home = document.querySelector('#home')
+const about = document.querySelector('#about')
+const logistics = document.querySelector('#logistics')
+const catalog = document.querySelector('#catalog')
+const contact = document.querySelector('#contact')
+const social = document.querySelector('#social')
+
+hbtn.addEventListener('click',()=>{
+    menu.click();
+    home.scrollIntoView({ behavior: 'smooth'});
+
+
+})
+abtn.addEventListener('click',()=>{
+    menu.click();
+    about.scrollIntoView({ behavior: 'smooth'});
+
+
+})
+lbtn.addEventListener('click',()=>{
+    menu.click();
+    logistics.scrollIntoView({ behavior: 'smooth'});
+
+
+})
+cbtn.addEventListener('click',()=>{
+    menu.click();
+    catalog.scrollIntoView({ behavior: 'smooth'});
+
+})
+cobtn.addEventListener('click',()=>{
+    menu.click();
+    contact.scrollIntoView({ behavior: 'smooth'});
+
+
+})
+sbtn.addEventListener('click',()=>{
+    menu.click();
+    social.scrollIntoView({ behavior: 'smooth'});
+
+
+})
+
+
