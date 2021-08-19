@@ -23,14 +23,14 @@ const name1 = document.querySelector('#name')
 
 var c = 1;
 menu.addEventListener('click',()=>{
-    console.log("clicked")
+    // console.log("clicked")
     if(c%2 === 1){
         nav.style.height = '30vh'
         upper.style.height = '20%'
         lower.style.height = '80%'
         name1.style.display = 'inline-block'
         c = c+1;
-        console.log(c)
+        // console.log(c)
     }
     else if (c%2 === 0){
         nav.style.height = '10vh'
